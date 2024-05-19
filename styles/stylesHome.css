@@ -52,6 +52,21 @@ color: #f2f2f2;
     color: #f2f2f2;
   }
 
+<<<<<<< HEAD
+=======
+  .home-lista {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0, 40px;
+    position: relative;
+    color: white;
+
+
+
+  }
+
+>>>>>>> main
   img{
 display: flex;
 
