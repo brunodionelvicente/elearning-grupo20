@@ -1,0 +1,72 @@
+body {
+  font-family:  "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --gray: #D0D0D0;
+  --white: #FFFFFF;
+}
+
+button {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: inherit;
+  padding: 0;
+}
+
+input[type="text"] {
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.header {
+  align-items: center;
+  background-color: var(--white);
+  box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+  display: flex;
+  height: 72px;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+}
+
+.search_container {
+  align-items: center;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  display: flex;
+  height: 40px;
+  padding: 0 1rem;
+  position: relative;
+  width: 400px;
+}
+
+.search_input {
+  height: 40px;
+  width: 100%;
+}
+
+.search_icon-button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+  
+}
