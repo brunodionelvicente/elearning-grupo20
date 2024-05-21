@@ -73,6 +73,11 @@ a {
   display: flex;
   justify-content: center;
   width: 48px;
+  visibility: hidden;
+}
+
+.fonts-loaded .search_icon-button  {
+  visibility: visible; 
 }
 
 header nav ul {
@@ -96,6 +101,8 @@ footer {
 footer h3 {
   color: var(--dark-gray);
 }
+
+
 
 @media screen and (max-width: 768px) {
   

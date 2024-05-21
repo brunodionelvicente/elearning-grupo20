@@ -191,6 +191,7 @@
     </footer>
 
     <script src="./scripts/index.js"></script>
+    <script src="scripts/fuenteiconos.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const selectSelected = document.querySelector(".select-selected");
@@ -279,19 +280,6 @@
               }
             }
           })
-
-          // inputs.forEach(input => {
-          //   const errorMessage = input.nextElementSibling;
-          //   if (input.type === 'checkbox' && !input.checked) {
-          //     errorMessage.textContent = "Este campo es obligatorio.";
-          //     valid = false;
-          //   } else if (input.value.trim() === "") {
-          //     errorMessage.textContent = "Este campo es obligatorio.";
-          //     valid = false;
-          //   } else {
-          //     errorMessage.textContent = "";
-          //   }
-          // });
 
           return valid;
         }
