@@ -1,294 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css"
-    />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/formulario_contacto.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header class="header">
-      <div>
-        <a href="/">
-          <img
-            src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
-            alt="logo"
-            width="91"
-            height="94"
-          />
-        </a>
-      </div>
-      <div class="search_container">
-        <button class="search_icon-button">
-          <span class="material-symbols-outlined"> search </span>
-        </button>
-        <input
-          type="text"
-          class="search_input"
-          placeholder="¿Qué te gustaría aprender?"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li class=""><a href="/"">Home</a> </li>
-          <li class=""><a href="">Registro</a> </li>
-          <li class=""><a href="formulario_contacto.html">Contacto</a>
-        </ul>
-      </nav>
-    </header>
 
-    <main class="contact_form_wrapper">
-      <section class="contact_form_hero_container">
-        <img src="assets/contactFormImage.jpg" alt="" />
-        <div class="contact_form_title_container">
-          <h1 class="contact_form_title">Formulario de contacto</h1>
-        </div>
-      </section>
-      <form class="contact_form" id="contactForm"">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./styles/headerFooter.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/formulario_contacto.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+
+  <main class="contact_form_wrapper">
+    <section class="contact_form_hero_container">
+      <img src="assets/contactFormImage.jpg" alt="" />
+      <div class="contact_form_title_container">
+        <h1 class="contact_form_title">Formulario de contacto</h1>
+      </div>
+    </section>
+    <form class="contact_form" id="contactForm"">
         <div>
-          <h2 class="form_title">Email</h2>
-          <div class="input-container">
-            <label htmlFor="email" className="floating-label">
-              <input placeholder="Email" name="email" class="required"/>
-            </label>
-            <small class="form_error_message" name="email"></small>
-          </div>
-        </div>
-        <div>
-          <h2 class="form_title">Número de teléfono</h2>
-          <div class="form_contact_phone_container">
-            <div class="form_contact_phone_flag_select">
-              <div class="custom-select">
-                <div class="select-selected">
-                  <span class="fi fi-ar"></span> +54
-                </div>
-                <div class="select-items">
-                  <div data-value="ar"><span class="fi fi-ar"></span> +54</div>
-                  <div data-value="bo"><span class="fi fi-bo"></span> +591</div>
-                  <div data-value="br"><span class="fi fi-br"></span> +55</div>
-                  <div data-value="cl"><span class="fi fi-cl"></span> +56</div>
-                  <div data-value="co"><span class="fi fi-de"></span> +57</div>
-                  <div data-value="ec"><span class="fi fi-ec"></span> +593</div>
-                  <div data-value="py"><span class="fi fi-py"></span> +595</div>
-                  <div data-value="pe"><span class="fi fi-pe"></span> +51</div>
-                  <div data-value="uy"><span class="fi fi-uy"></span> +598</div>
-                  <div data-value="ve"><span class="fi fi-ve"></span> +58</div>
-                </div>
+          <h2 class=" form_title">Email</h2>
+      <div class="input-container">
+        <label htmlFor="email" className="floating-label">
+          <input placeholder="Email" name="email" class="required" />
+        </label>
+        <small class="form_error_message" name="email"></small>
+      </div>
+      </div>
+      <div>
+        <h2 class="form_title">Número de teléfono</h2>
+        <div class="form_contact_phone_container">
+          <div class="form_contact_phone_flag_select">
+            <div class="custom-select">
+              <div class="select-selected">
+                <span class="fi fi-ar"></span> +54
+              </div>
+              <div class="select-items">
+                <div data-value="ar"><span class="fi fi-ar"></span> +54</div>
+                <div data-value="bo"><span class="fi fi-bo"></span> +591</div>
+                <div data-value="br"><span class="fi fi-br"></span> +55</div>
+                <div data-value="cl"><span class="fi fi-cl"></span> +56</div>
+                <div data-value="co"><span class="fi fi-de"></span> +57</div>
+                <div data-value="ec"><span class="fi fi-ec"></span> +593</div>
+                <div data-value="py"><span class="fi fi-py"></span> +595</div>
+                <div data-value="pe"><span class="fi fi-pe"></span> +51</div>
+                <div data-value="uy"><span class="fi fi-uy"></span> +598</div>
+                <div data-value="ve"><span class="fi fi-ve"></span> +58</div>
               </div>
             </div>
-            <div class="input_container">
-              <label htmlFor="phone_number" class="floating-label">
-                <input placeholder="Número de teléfono" name="phone_number" class="required"/>
-              </label>
-              <small
-                class="form_error_message"
-                name="phone_number"
-                component="small"
-              ></small>
-            </div>
+          </div>
+          <div class="input_container">
+            <label htmlFor="phone_number" class="floating-label">
+              <input placeholder="Número de teléfono" name="phone_number" class="required" />
+            </label>
+            <small class="form_error_message" name="phone_number" component="small"></small>
           </div>
         </div>
-        <div class="contact_form_names">
-          <div class="contact_form_names_container">
-            <h2 class="form_title">Nombre(s)</h2>
-            <div class="input_container">
-              <label htmlFor="name" class="floating-label">
-                <input placeholder="Nombre(s)" name="name" class="required"/>
-              </label>
-              <small
-                class="form_error_message"
-                name="name"
-                component="small"
-              ></small>
-            </div>
-          </div>
-          <div class="contact_form_names_container">
-            <h2 class="form_title">Apellido(s)</h2>
-            <div class="input_container">
-              <label htmlFor="last_name" class="floating-label">
-                <input placeholder="Apellidos(s)" name="last_name" class="required"/>
-              </label>
-              <small
-                class="form_error_message"
-                name="last_name"
-                component="small"
-              ></small>
-            </div>
+      </div>
+      <div class="contact_form_names">
+        <div class="contact_form_names_container">
+          <h2 class="form_title">Nombre(s)</h2>
+          <div class="input_container">
+            <label htmlFor="name" class="floating-label">
+              <input placeholder="Nombre(s)" name="name" class="required" />
+            </label>
+            <small class="form_error_message" name="name" component="small"></small>
           </div>
         </div>
-        <div>
-          <h2 class="form_title">¿Qué tecnología te interesaría aprender?</h2>
-          <div class="form_checkbox_container">
-            <label for="javascript" class="form_checkbox">
-              <input
-                type="checkbox"
-                id="javascript"
-                name="tech"
-                value="Javascript"
-              />
-              Javascript
+        <div class="contact_form_names_container">
+          <h2 class="form_title">Apellido(s)</h2>
+          <div class="input_container">
+            <label htmlFor="last_name" class="floating-label">
+              <input placeholder="Apellidos(s)" name="last_name" class="required" />
             </label>
-          </div>
-
-          <div class="form_checkbox_container">
-            <label for="typescript" class="form_checkbox">
-              <input
-                type="checkbox"
-                id="typescript"
-                name="tech"
-                value="TypeScript"
-              />
-              TypeScript
-            </label>
-          </div>
-
-          <div class="form_checkbox_container">
-            <label for="css" class="form_checkbox">
-              <input type="checkbox" id="css" name="tech" value="CSS" />
-              CSS
-            </label>
-          </div>
-
-          <div class="form_checkbox_container">
-            <label for="python" class="form_checkbox">
-              <input type="checkbox" id="python" name="tech" value="Python" />
-              Python
-            </label>
-          </div>
-
-          <div class="form_checkbox_container">
-            <label for="react" class="form_checkbox">
-              <input type="checkbox" id="react" name="tech" value="React" />
-              React
-            </label>
+            <small class="form_error_message" name="last_name" component="small"></small>
           </div>
         </div>
-        <div class="form_button">
-          <button type="submit">Enviar</button>
-        </div>
-      </form>
-    </main>
-
-    <footer>
+      </div>
       <div>
-        <h3>🚀 Proyecto educativo Codo a Codo 2024 🚀</h3>
-      </div>    
-    </footer>
+        <h2 class="form_title">¿Qué tecnología te interesaría aprender?</h2>
+        <div class="form_checkbox_container">
+          <label for="javascript" class="form_checkbox">
+            <input type="checkbox" id="javascript" name="tech" value="Javascript" />
+            Javascript
+          </label>
+        </div>
 
-    <script src="./scripts/index.js"></script>
-    <script src="scripts/fuenteiconos.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const selectSelected = document.querySelector(".select-selected");
-        const selectItems = document.querySelector(".select-items");
-        const hiddenInput = document.getElementById("country");
+        <div class="form_checkbox_container">
+          <label for="typescript" class="form_checkbox">
+            <input type="checkbox" id="typescript" name="tech" value="TypeScript" />
+            TypeScript
+          </label>
+        </div>
 
-        const errorEmailInput = document.querySelector("small[name='email']");
-        const errorNameInput = document.querySelector("small[name='name']");
-        const errorLastNameInput = document.querySelector("small[name='last_name']");
-        const errorPhoneNumberInput = document.querySelector("small[name='phone_number']");
-        console.log({errorEmailInput, errorLastNameInput, errorNameInput, errorPhoneNumberInput})
-        
+        <div class="form_checkbox_container">
+          <label for="css" class="form_checkbox">
+            <input type="checkbox" id="css" name="tech" value="CSS" />
+            CSS
+          </label>
+        </div>
 
-        selectSelected.addEventListener("click", function () {
-          selectItems.style.display =
-            selectItems.style.display === "block" ? "none" : "block";
-        });
+        <div class="form_checkbox_container">
+          <label for="python" class="form_checkbox">
+            <input type="checkbox" id="python" name="tech" value="Python" />
+            Python
+          </label>
+        </div>
 
-        selectItems.addEventListener("click", function (e) {
-          if (e.target && e.target.nodeName === "DIV") {
-            const value = e.target.getAttribute("data-value");
-            const htmlContent = e.target.innerHTML;
-            selectSelected.innerHTML = htmlContent;
-            hiddenInput.value = value;
-            selectItems.style.display = "none";
-          }
-        });
+        <div class="form_checkbox_container">
+          <label for="react" class="form_checkbox">
+            <input type="checkbox" id="react" name="tech" value="React" />
+            React
+          </label>
+        </div>
+      </div>
+      <div class="form_button">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+  </main>
 
-        document.addEventListener("click", function (e) {
-          if (
-            (!selectSelected.contains(e.target) &&
-              selectItems.contains(e.target)) ||
-            !selectSelected.contains(e.target)
-          ) {
-            selectItems.style.display = "none";
-          }
-        });
+  <footer>
+  
+  </footer>
+  <script src="./scripts/hf.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="scripts/fuenteiconos.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const selectSelected = document.querySelector(".select-selected");
+      const selectItems = document.querySelector(".select-items");
+      const hiddenInput = document.getElementById("country");
 
-        document.getElementById("contactForm").addEventListener("submit", function(e) {
-          e.preventDefault();
-          if (validateForm()) {
-            handleContactFormSubmit();
-          }
-        });
-        
-        function validateForm() {
-          const form = document.getElementById("contactForm");
-          const inputs = form.querySelectorAll("input.required");
-          let valid = true;
+      const errorEmailInput = document.querySelector("small[name='email']");
+      const errorNameInput = document.querySelector("small[name='name']");
+      const errorLastNameInput = document.querySelector("small[name='last_name']");
+      const errorPhoneNumberInput = document.querySelector("small[name='phone_number']");
+      console.log({ errorEmailInput, errorLastNameInput, errorNameInput, errorPhoneNumberInput })
 
-          inputs.forEach(input => {
-            if(input.name === "email") {
-              if(input.value.trim().length === 0) {
-                errorEmailInput.textContent = "Este campo es obligatorio.";
-                valid = false;
-              } else {
-                errorEmailInput.textContent = "";
-                valid = true;
-              }
-            }
-            if(input.name === "name") {
-              if(input.value.trim().length === 0) {
-                errorNameInput.textContent = "Este campo es obligatorio.";
-                valid = false;
-              } else {
-                errorNameInput.textContent = "";
-                valid = true;
-              }
-            }
-            if(input.name === "last_name") {
-              if(input.value.trim().length === 0) {
-                errorLastNameInput.textContent = "Este campo es obligatorio.";
-                valid = false;
-              } else {
-                errorLastNameInput.textContent = "";
-                valid = true;
-              }
-            }
-            if(input.name === "phone_number") {
-              if(input.value.trim().length === 0) {
-                errorPhoneNumberInput.textContent = "Este campo es obligatorio.";
-                valid = false;
-              } else {
-                errorPhoneNumberInput.textContent = "";
-                valid = true;
-              }
-            }
-          })
 
-          return valid;
-        }
+      selectSelected.addEventListener("click", function () {
+        selectItems.style.display =
+          selectItems.style.display === "block" ? "none" : "block";
+      });
 
-        function handleContactFormSubmit() {
-          console.log('Form submitted');
-          // Aquí puedes manejar los datos del formulario
+      selectItems.addEventListener("click", function (e) {
+        if (e.target && e.target.nodeName === "DIV") {
+          const value = e.target.getAttribute("data-value");
+          const htmlContent = e.target.innerHTML;
+          selectSelected.innerHTML = htmlContent;
+          hiddenInput.value = value;
+          selectItems.style.display = "none";
         }
       });
-    </script>
-  </body>
+
+      document.addEventListener("click", function (e) {
+        if (
+          (!selectSelected.contains(e.target) &&
+            selectItems.contains(e.target)) ||
+          !selectSelected.contains(e.target)
+        ) {
+          selectItems.style.display = "none";
+        }
+      });
+
+      document.getElementById("contactForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (validateForm()) {
+          handleContactFormSubmit();
+        }
+      });
+
+      function validateForm() {
+        const form = document.getElementById("contactForm");
+        const inputs = form.querySelectorAll("input.required");
+        let valid = true;
+
+        inputs.forEach(input => {
+          if (input.name === "email") {
+            if (input.value.trim().length === 0) {
+              errorEmailInput.textContent = "Este campo es obligatorio.";
+              valid = false;
+            } else {
+              errorEmailInput.textContent = "";
+              valid = true;
+            }
+          }
+          if (input.name === "name") {
+            if (input.value.trim().length === 0) {
+              errorNameInput.textContent = "Este campo es obligatorio.";
+              valid = false;
+            } else {
+              errorNameInput.textContent = "";
+              valid = true;
+            }
+          }
+          if (input.name === "last_name") {
+            if (input.value.trim().length === 0) {
+              errorLastNameInput.textContent = "Este campo es obligatorio.";
+              valid = false;
+            } else {
+              errorLastNameInput.textContent = "";
+              valid = true;
+            }
+          }
+          if (input.name === "phone_number") {
+            if (input.value.trim().length === 0) {
+              errorPhoneNumberInput.textContent = "Este campo es obligatorio.";
+              valid = false;
+            } else {
+              errorPhoneNumberInput.textContent = "";
+              valid = true;
+            }
+          }
+        })
+
+        return valid;
+      }
+
+      function handleContactFormSubmit() {
+        console.log('Form submitted');
+        // Aquí puedes manejar los datos del formulario
+      }
+    });
+  </script>
+</body>
+
 </html>
