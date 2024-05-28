@@ -11,8 +11,8 @@ cad=`<div>
 </div>
 <nav>
 <ul>
-  <li class=""><a href="" onclick="route()">Home</a> </li>
-  <li class=""><a href="">Registro</a> </li>
+  <li class=""><a href="iniciosesion.html">Login</a> </li>
+  <li class=""><a href="registro.html">Registro</a> </li>
   <li class=""><a href="formulario_contacto.html">Contacto</a>
 </ul>
 </nav>`
