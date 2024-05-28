@@ -1,0 +1,8 @@
+#inicio{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 20px auto 0;
+    gap: 10px;
+    
+}

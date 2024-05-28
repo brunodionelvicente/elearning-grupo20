@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.banner {
+    padding-top: 2%;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#imagenBanner {
+    width: 100%;
+
+}
+
+#tituloImagen {
+    background-color: white;
+    padding: 1.5% 0% 1.5%;
+    width: 100%;
+    text-align: center;
+    width: 30%;
+margin-left: 5%;
+margin-top: 5%;
+    position: absolute;
+
+
+}
+
+#registro {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin: 20px auto 0;
+    gap: 10px;
+
+
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) {}
