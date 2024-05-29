@@ -22,14 +22,15 @@ header {
     display: flex;
     height: 72px;
     justify-content: space-between;
-    padding: 0 2.4rem;
+    padding: 0 1rem;
+    position: relative;
 }
 
 .search_container {
     align-items: center;
     border: 1px solid var(--gray);
     border-radius: 5px;
-    display: flex;
+    display: none;
     height: 40px;
     padding: 0 1rem;
     position: relative;
@@ -72,6 +73,60 @@ footer {
 footer h3 {
     color: var(--dark-gray);
 }
+
 #logo{
-  width:50%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav {
+      flex-direction: column;
+      background: var(--white);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%; 
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      visibility: hidden;
+      z-index: 1;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav.nav-open {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      visibility: visible;
+      padding-bottom: 1rem;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+    .logo_container {
+        display: flex;
+    }
+
+    #logo{
+      width: 130px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search_container {
+        display: flex;
+    }
 }

@@ -4,45 +4,61 @@
     font-family: "Poppins", sans-serif;
 }
 
-
-
 .banner {
-    padding-top: 2%;
-    width: 80%;
-    display: flex;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
-#imagenBanner {
+.imagenBanner {
+    margin: 0 auto;
     width: 100%;
-
+    height: auto;
+    object-fit: cover;
+    object-position: right;
+    display: block;
 }
 
-#tituloImagen {
-    background-color: white;
-    padding: 1.5% 0% 1.5%;
-    width: 100%;
+.tituloImagen {
     text-align: center;
-    width: 30%;
-margin-left: 5%;
-margin-top: 5%;
-    position: absolute;
-
-
+    font-size: 28px;
+    color: var(--dark-gray);
 }
 
-#registro {
+.registro_form_wrapper {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.registro_title_container {
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+}
+
+.resgistro_form {
     display: flex;
     flex-direction: column;
-    width: 48%;
-    margin: 20px auto 0;
-    gap: 10px;
-
-
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    .registro_title_container {
+        background-color: transparent !important;
+        position: static !important;
+        text-align: center;
+    }
+
+    .tituloImagen {
+        font-size: 22px;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .banner {
