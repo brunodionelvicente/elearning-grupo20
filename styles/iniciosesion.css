@@ -1,8 +1,30 @@
-#inicio{
+.iniciosesion_form_wrapper {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.iniciosesion_form_title_container {
+    position: absolute;
+    top: 25%;
+    left: 2rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--white);
+}
+
+.iniciosesion_form {
     display: flex;
     flex-direction: column;
-    width: 48%;
-    margin: 20px auto 0;
-    gap: 10px;
-    
+    gap: 1rem;
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+@media screen and (max-width: 768px) {
+    .iniciosesion_form_title_container {
+        background-color: transparent !important;
+        position: static !important;
+        text-align: center;
+    }
 }

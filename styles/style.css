@@ -7,7 +7,8 @@ body {
 }
 
 :root {
-  --dark-gray: #2D2F31;
+  --blue: #166EE1;
+  --dark-gray: #333;
   --gray: #D0D0D0;
   --light-gray: #FAFAFA;
   --red: #E32B2B;
@@ -50,13 +51,15 @@ a {
   height: 72px;
   justify-content: space-between;
   padding: 0 2.4rem;
+  position: relative;
+  z-index: 2;
 }
 
 .search_container {
   align-items: center;
   border: 1px solid var(--gray);
   border-radius: 5px;
-  display: flex;
+  display: none;
   height: 40px;
   padding: 0 1rem;
   position: relative;
@@ -90,6 +93,25 @@ header nav ul a {
   text-decoration: none;
 }
 
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   align-items: center;
   box-sizing: border-box;
@@ -105,13 +127,89 @@ footer h3 {
 
 
 @media screen and (max-width: 768px) {
+  .contact_form_title_container {
+    top: 10%;
+  }
+
+  .contact_form_title_container {
+    background-color: transparent!important;
+    position: static!important;
+    text-align: center;
+  }
+
+  .contact_form_title {
+    font-size: 22px!important;
+  }
   
+  .contact_form {
+    margin-top: 0!important;
+  }
+
+  .contact_form_wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .form_button {
+    gap: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   
 }
 
+@media screen and (max-width: 1024px) {
+  .nav {
+    flex-direction: column;
+    background: var(--white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%; 
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    visibility: hidden;
+    z-index: 1;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav.nav-open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    visibility: visible;
+    padding-bottom: 1rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
-  
+  .search_container {
+    display: flex;
+  }
 }

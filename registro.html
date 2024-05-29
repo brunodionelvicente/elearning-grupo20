@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registro</title>
     <link rel="shortcut icon" href="./assets/Favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/registro.css" />
     <link rel="stylesheet" href="./styles/headerFooter.css" />
-
+    <link rel="stylesheet" href="./styles/formularios.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,53 +23,83 @@
 
   <body>
     <header></header>
-    <main>
+    <main class="registro_form_wrapper">
       <section class="banner">
         <img
-          id="imagenBanner"
-          src="./assets/contactFormImage.jpg"
+          class="imagenBanner"
+          src="./assets/img/contactFormImage.jpg"
           alt="Registro imagen"
         />
-        <h1 id="tituloImagen">Formulario de Registro</h1>
+        <div class="registro_title_container">
+          <h1 class="tituloImagen">Formulario de Registro</h1>
+        </div>
       </section>
 
       <section class="formularioRegistro">
-        <form action="">
-          <div id="registro">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" required />
+        <form class="form" id="registro_form">
+          <div>
+            <h2 class="form_title">Nombre</h2>
+            <label for="nombre">
+              <input type="text" name="nombre" id="nombre" required />
+            </label>
+          </div>
 
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" required />
+          <div>
+            <h2 class="form_title">Apellido</h2>
+            <label for="apellido">
+              <input type="text" name="apellido" id="apellido" required />
+            </label>
+          </div>
 
-            <label for="nacimiento">Fecha de Nacimiento</label>
-            <input type="date" name="nacimiento" id="nacimiento" required />
+          <div>
+            <h2 class="form_title">Fecha de Nacimiento</h2>
+            <label for="nacimiento">
+              <input type="date" name="nacimiento" id="nacimiento" required />
+            </label>
+          </div>
 
-            <label for="genero">Genero</label>
-            <select name="genero" id="genero">
-              <option value="femenino">Femenino</option>
-              <option value="masculino">Masculino</option>
-              <option value="nobin">No binario</option>
-              <option value="otro">Otro</option>
-            </select>
+          <div>
+            <h2 class="form_title">Genero</h2>
+            <label for="genero">
+              <select name="genero" id="genero">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="nobin">No binario</option>
+                <option value="otro">Otro</option>
+              </select>
+            </label>
+          </div>
 
-            <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail" required />
+          <div>
+            <h2 class="form_title">Email</h2>
+            <label for="mail">
+              <input type="email" name="mail" id="mail" required />
+            </label>
+          </div>
 
-            <label for="contra">Contraseña</label>
-            <input type="password" name="contra" id="contra" required />
+          <div>
+            <h2 class="form_title">Contraseña</h2>
+            <label for="contra">
+              <input type="password" name="contra" id="contra" required />
+            </label>
+          </div>
 
-            <label for="contra2">Confirme Contraseña</label>
-            <input type="password" name="contra2" id="contra2" required />
+          <div>
+            <h2 class="form_title">Confirme Contraseña</h2>
+            <label for="contra2">
+              <input type="password" name="contra2" id="contra2" required />
+            </label>
+          </div>
 
-            <button type="submit" class="button">Enviar Datos</button>
-
+          <div class="form_button">
             <button type="reset" class="button">Borrar Datos</button>
+            <button type="submit" class="button">Enviar Datos</button>
           </div>
         </form>
       </section>
     </main>
     <footer></footer>
     <script src="./scripts/hf.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
