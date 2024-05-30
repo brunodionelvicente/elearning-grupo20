@@ -1,0 +1,162 @@
+/** Estilos Generales **/
+
+.main{
+    background-color: rgba(106, 141, 163, 0.7);
+}
+
+  h1, h2{
+ font-family: "poppins",sans-serif;
+ font-size: 3rem;
+ text-align: center;
+ color: black;
+ 
+
+  }
+
+ h2, h3 {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 2rem;
+color: #f2f2f2;
+text-align: center;
+margin: 5 5 5 5;
+padding: 0;
+
+  }
+
+  p{
+text-align: justify;
+margin: auto;
+padding: auto;
+background-position: center;
+display: flex;
+
+
+
+  }
+.header-home {
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    position: 0;
+    top: 0%;
+    background: white;
+    text-align: center;
+   
+  }
+
+  nav{
+
+    display: inline-block;
+    text-align: right;
+    color: #f2f2f2;
+  }
+
+  #home-section1 {
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    padding: 0;
+    margin: auto;
+
+    
+
+  }
+
+   .main__picture {
+   background-position: center;
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   align-items: center;
+   margin: 15px 5px 35px 5px;
+   padding: 10px 10px 10px 10px;
+   max-width: 100%;
+   
+   
+
+  }
+  
+  .mainPicture_img {
+
+    max-width: 100%;
+    object-fit: cover;
+
+
+  }
+  .curso-1, .curso-2, .curso-3 {
+         
+    display: grid;
+    grid-template-columns: 1fr; /* Ajusta el diseño */
+    gap: 20px; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical */
+    text-align: center; /* Alineación horizontal */
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .curso-1 img, .curso-2 img, .curso-3 img {
+    width: 300px; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+
+  }
+
+  .home-section1 h1, .home-section1 h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+
+  .cursos {
+   
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+
+  }
+
+ 
+ 
+  footer {
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    position: 0;
+
+  }
+  
+  @media screen and (max-width: 768px) {
+  .header, .footer, .home-section1, .main__picture .main {   
+    
+    flex-direction: column;  
+     
+    
+  } 
+  }
+
+  @media screen and (max-width: 1024px) {
+
+    .cursos {flex-direction: column;   }
+
+  } 
+
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+      
+      .header, .header-home, .home-section1, .main__picture .main,  .footer {   
+        flex-direction: column;
+      }
+    
+
+
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .header, .header-home,  .home-section1, .main__picture .main, .footer {   
+      flex-direction: inherit;
+    }
+  
+    
+  }
