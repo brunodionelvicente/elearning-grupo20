@@ -7,12 +7,13 @@ body {
 }
 
 :root {
-  --blue: #166EE1;
+  --blue: #1148B2;
   --dark-gray: #333;
   --gray: #D0D0D0;
   --light-gray: #FAFAFA;
   --red: #E32B2B;
   --white: #FFFFFF;
+  --color-background: #F2F2F2;
 }
 
 button {
@@ -117,7 +118,8 @@ footer {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  padding: 3rem 0 1rem;
+  background: var(--color-background);
 }
 
 footer h3 {

@@ -61,19 +61,6 @@ header nav ul a{
   
 }
 
-
-footer {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-}
-
-footer h3 {
-    color: var(--dark-gray);
-}
-
 #logo{
   width: 50%;
 }
